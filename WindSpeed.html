@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--All the same code works, just need to change for WindSpeed.-->
+<head>
+    <!--Pull this from the previous sheet head. It's all boiler plate.-->
+    <meta charset="UTF-8"
+    <title>Windspeed</title>
+        <!--This was the title I figure out I need to change. So noted.-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+        crossorigin="anonymous"></script>
+</head>
+
+<!--Navbar adjustments for the Windspeed page-->
+<body>
+    <!--we did the button creation previously. same deal, adjust the links per each individual image as necessary-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-medium">
+        <div class="container">
+            <a class="navbar-brand text-white" href="LandingPage.html">Latitude</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">   
+                    <li class="nav-item">
+                        <a class="nav-link" href="LandingPage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Comparison.html">Comparison</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Data.html">Data</a>
+                    </li> 
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Plots
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="Temperature.html">Max Temperature</a>
+                            <a class="dropdown-item" href="Humidity.html">Humidity</a>
+                            <a class="dropdown-item" href="Cloudiness.html">Cloudiness</a>
+                            <a class="dropdown-item" href="WindSpeed.html">Wind Speed</a>
+                        </div>
+                    </li>
+                  
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-10">
+            <div class="col-lg-14">
+            <h1> WindSpeed</h1>
+            <hr>
+            <img src="assets/images/Fig4.png" class="img-fluid">
+            <!-- Centering everything. Source: https://www.w3schools.com/css/css_align.asp -->
+            <p style="text-align:center">WindSpeed is also poorly correlable to Latitude, at least as interpreted from the available data. Employing some pre-existing knowledge of winds associated with latitudes (tradewinds, doldrums, horse latitudes, etc.), I expected a stronger relationship to be evident in the data.</p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="col-lg-10">
+              <h3>Visualizations</h3>
+              <hr>
+              <div class="row">
+                <div class="col-lg-6 col-sm-3">
+                <!--Img Fluid documentation here: https://getbootstrap.com/docs/4.0/content/images/-->
+                <a href="Temperature.html"><img src="assets/images/Fig1.png" class="img-fluid" >
+                </a>
+                </div>
+                <div class="col-lg-6 col-sm-3">
+                <a href="Humidity.html"><img src="assets/images/Fig2.png" class="img-fluid">
+                </a>
+                </div>  
+                <div class="col-lg-6 col-sm-3">
+                <a href="Cloudiness.html"><img src="assets/images/Fig3.png" class="img-fluid" >
+                </a>
+                </div> 
+                <div class="col-lg-6 col-sm-3">
+                <a href="Windspeed.html"><img src="assets/images/Fig4.png" class="img-fluid">
+                </a>
+                </div>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </div>
+    
+</body>
+</html>
